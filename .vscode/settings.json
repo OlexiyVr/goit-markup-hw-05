@@ -1,0 +1,6 @@
+{
+  "ecsstractor_tsx_port.attributes": "className",
+  "ecsstractor_tsx_port.bem_nesting": true,
+  "ecsstractor_tsx_port.comment_style": "css",
+  "liveServer.settings.port": 5501
+}
