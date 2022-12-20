@@ -48,10 +48,14 @@ img {
 
 .header-link:hover {
   color: var(--brand-primary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:focus {
   color: var(--brand-primary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a {
@@ -95,18 +99,42 @@ a {
   letter-spacing: 0.02em;
   color: var(--h2h3-header-footer-color);
   text-decoration: none;
-  display: block;
+  display: inline-block;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
+  position: relative;
+}
+
+.header-link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 0;
+  /* transition: width .5s ease-in-out; */
+  left: 0;
+  bottom: 24px;
+}
+
+.header-link:hover::after {
+  border-top: 0;
+  border-bottom: 4px solid var(--brand-primary-color);
+  border-radius: 2px;
+  width: 100%;
+  bottom: -100%;
 }
 
 .contacts:hover {
   color: var(--brand-primary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:focus {
   color: var(--brand-primary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -170,11 +198,15 @@ a {
 .header-btn:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-btn:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ABOUT SECTION */
@@ -369,28 +401,33 @@ a {
   fill: #8e8f99;
 }
 
-.logolist:hover, .logolist:focus {
+.logolist:hover,
+.logolist:focus {
   border-color: #4d5ae5;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logolistsitem{
+.logolistsitem {
   fill: #8e8f99;
 }
 
-.logolist:hover .logolistsitem{
+.logolist:hover .logolistsitem {
   fill: #4d5ae5;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logolist:focus .logolistsitem {
   fill: #4d5ae5;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logolistsitem {
   width: 104px;
   height: 56px;
 }
-
-
 
 .logolista:not(:last-child) {
   margin-right: 24px;
@@ -454,15 +491,17 @@ a {
   margin-right: 16px;
 }
 
-.soclistfooter:hover, .soclistfooter:focus {
+.soclistfooter:hover,
+.soclistfooter:focus {
   background: #31d0aa;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svgiconsfooter {
   width: 24px;
   height: 24px;
 }
-
 
 /* Portfolio  Page*/
 /* Section Button Filtres */
@@ -515,6 +554,8 @@ a {
   border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:focus {
@@ -523,6 +564,8 @@ a {
   border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section Row-a,b,c */
@@ -543,7 +586,7 @@ ul {
 }
 
 .row-imgs {
-  flex-basis: calc((100% - 2*24px) /3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .rowlink {
@@ -554,11 +597,15 @@ ul {
 .rowlink:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rowlink:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rowinf {
