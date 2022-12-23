@@ -114,7 +114,6 @@ a {
   content: "";
   height: 4px;
   width: 0;
-  transition: ease-in-out;
   left: 0;
   bottom: 24px;
 }
